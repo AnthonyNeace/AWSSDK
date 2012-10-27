@@ -1,0 +1,55 @@
+﻿<#@ import namespace="System" #>
+<#@ import namespace="System.Collections.Generic" #> 
+
+<#+
+	class SdkIdentifier
+	{
+		private string _sdkName;
+		
+		public string EventName
+		{
+			get
+			{
+				return "Event" + Name;
+			}
+		}
+		
+		public string CallbackName
+		{
+			get
+			{
+				return "Callback" + Name;
+			}
+		}
+		
+		public string Name
+		{
+			get;
+			private set;
+		}
+		
+		public string SdkName
+		{
+			get
+			{
+				return _sdkName;
+			}
+			
+			set
+			{
+				_sdkName = value;
+				Name = System.Globalization.CultureInfo.CurrentCulture.TextInfo
+							.ToTitleCase(value.ToLower())
+							.Substring(3)
+							.Replace("_", "")
+							.Replace("Event", "")
+							.Replace("Callback", "");
+			}
+		}
+		
+		public static implicit operator SdkIdentifier(string name)
+		{
+			return new SdkIdentifier() { SdkName = name };	
+		}
+	}
+#>
