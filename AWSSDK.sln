@@ -1,0 +1,48 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AW.Core", "AW.Core\AW.Core.csproj", "{EB5BD7CA-5BCC-4ABF-89C7-8ADC00013C66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWSSDK", "AWSSDK\AWSSDK.csproj", "{E71F7221-20A8-4FA9-859E-1C00EB092BEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleBot", "SampleBot\SampleBot.csproj", "{28B043E9-3D80-4287-A30F-7F8DB0685BB5}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = AWNET.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x86 = Debug|x86
+		Release|Win32 = Release|Win32
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB5BD7CA-5BCC-4ABF-89C7-8ADC00013C66}.Debug|Win32.ActiveCfg = Debug|x86
+		{EB5BD7CA-5BCC-4ABF-89C7-8ADC00013C66}.Debug|Win32.Build.0 = Debug|x86
+		{EB5BD7CA-5BCC-4ABF-89C7-8ADC00013C66}.Debug|x86.ActiveCfg = Debug|x86
+		{EB5BD7CA-5BCC-4ABF-89C7-8ADC00013C66}.Debug|x86.Build.0 = Debug|x86
+		{EB5BD7CA-5BCC-4ABF-89C7-8ADC00013C66}.Release|Win32.ActiveCfg = Release|x86
+		{EB5BD7CA-5BCC-4ABF-89C7-8ADC00013C66}.Release|Win32.Build.0 = Release|x86
+		{EB5BD7CA-5BCC-4ABF-89C7-8ADC00013C66}.Release|x86.ActiveCfg = Release|x86
+		{EB5BD7CA-5BCC-4ABF-89C7-8ADC00013C66}.Release|x86.Build.0 = Release|x86
+		{E71F7221-20A8-4FA9-859E-1C00EB092BEE}.Debug|Win32.ActiveCfg = Debug|x86
+		{E71F7221-20A8-4FA9-859E-1C00EB092BEE}.Debug|Win32.Build.0 = Debug|x86
+		{E71F7221-20A8-4FA9-859E-1C00EB092BEE}.Debug|x86.ActiveCfg = Debug|x86
+		{E71F7221-20A8-4FA9-859E-1C00EB092BEE}.Debug|x86.Build.0 = Debug|x86
+		{E71F7221-20A8-4FA9-859E-1C00EB092BEE}.Release|Win32.ActiveCfg = Release|x86
+		{E71F7221-20A8-4FA9-859E-1C00EB092BEE}.Release|Win32.Build.0 = Release|x86
+		{E71F7221-20A8-4FA9-859E-1C00EB092BEE}.Release|x86.ActiveCfg = Release|x86
+		{E71F7221-20A8-4FA9-859E-1C00EB092BEE}.Release|x86.Build.0 = Release|x86
+		{28B043E9-3D80-4287-A30F-7F8DB0685BB5}.Debug|Win32.ActiveCfg = Debug|x86
+		{28B043E9-3D80-4287-A30F-7F8DB0685BB5}.Debug|Win32.Build.0 = Debug|x86
+		{28B043E9-3D80-4287-A30F-7F8DB0685BB5}.Debug|x86.ActiveCfg = Debug|x86
+		{28B043E9-3D80-4287-A30F-7F8DB0685BB5}.Debug|x86.Build.0 = Debug|x86
+		{28B043E9-3D80-4287-A30F-7F8DB0685BB5}.Release|Win32.ActiveCfg = Debug|x86
+		{28B043E9-3D80-4287-A30F-7F8DB0685BB5}.Release|Win32.Build.0 = Debug|x86
+		{28B043E9-3D80-4287-A30F-7F8DB0685BB5}.Release|x86.ActiveCfg = Debug|x86
+		{28B043E9-3D80-4287-A30F-7F8DB0685BB5}.Release|x86.Build.0 = Debug|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

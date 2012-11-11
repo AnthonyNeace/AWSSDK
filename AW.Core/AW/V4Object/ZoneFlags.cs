@@ -31,13 +31,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.Water;
-                }
                 else
-                {
                     flags &= ~Flags.Water;
-                }
             }
         }
 
@@ -48,13 +44,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.BlockParticles;
-                }
                 else
-                {
                     flags &= ~Flags.BlockParticles;
-                }
             }
         }
 
@@ -65,13 +57,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.BlockLights;
-                }
                 else
-                {
                     flags &= ~Flags.BlockLights;
-                }
             }
         }
 
@@ -82,13 +70,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.BlockWorldLight;
-                }
                 else
-                {
                     flags &= ~Flags.BlockWorldLight;
-                }
             }
         }
 
@@ -99,13 +83,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.BlockChat;
-                }
                 else
-                {
                     flags &= ~Flags.BlockChat;
-                }
             }
         }
 
@@ -116,13 +96,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.Visible;
-                }
                 else
-                {
                     flags &= ~Flags.Visible;
-                }
             }
         }
 
@@ -133,13 +109,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.BlockJoin;
-                }
                 else
-                {
                     flags &= ~Flags.BlockJoin;
-                }
             }
         }
 
@@ -150,13 +122,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.Voip;
-                }
                 else
-                {
                     flags &= ~Flags.Voip;
-                }
             }
         }
 
@@ -167,13 +135,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.BlockAudio;
-                }
                 else
-                {
                     flags &= ~Flags.BlockAudio;
-                }
             }
         }
     }

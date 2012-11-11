@@ -30,13 +30,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.Interpolate;
-                }
                 else
-                {
                     flags &= ~Flags.Interpolate;
-                }
             }
         }
 
@@ -47,13 +43,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.Gravity;
-                }
                 else
-                {
                     flags &= ~Flags.Gravity;
-                }
             }
         }
 
@@ -64,13 +56,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.ZoneCollision;
-                }
                 else
-                {
                     flags &= ~Flags.ZoneCollision;
-                }
             }
         }
 
@@ -81,13 +69,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.ZoneExclusive;
-                }
                 else
-                {
                     flags &= ~Flags.ZoneExclusive;
-                }
             }
         }
 
@@ -98,13 +82,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.CameraEmit;
-                }
                 else
-                {
                     flags &= ~Flags.CameraEmit;
-                }
             }
         }
 
@@ -115,13 +95,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.LinkToMover;
-                }
                 else
-                {
                     flags &= ~Flags.LinkToMover;
-                }
             }
         }
 
@@ -132,13 +108,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.DrawInFront;
-                }
                 else
-                {
                     flags &= ~Flags.DrawInFront;
-                }
             }
         }
 
@@ -149,13 +121,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.ApplyRotation;
-                }
                 else
-                {
                     flags &= ~Flags.ApplyRotation;
-                }
             }
         }
     }

@@ -123,9 +123,9 @@ namespace AW
         ~Instance()
         {
             if (!IsDisposed)
-            {
                 Dispose();
-            }
+
+
         }
 
         /// <summary>
@@ -140,9 +140,9 @@ namespace AW
             _disposed = true;
 
             if (Disposing != null)
-            {
                 Disposing(this);
-            }
+
+
 
             if (Utility.Initialized)
             {
@@ -176,9 +176,7 @@ namespace AW
         private void SetInstance()
         {
             if (NativeMethods.aw_instance() == _instance)
-            {
                 return;
-            }
 
             int rc = NativeMethods.aw_instance_set(_instance);
             SDKWrapperException<InstanceSetFailedException>.Assert(rc);
@@ -214,7 +212,7 @@ namespace AW
         /// <param name="attribute">The attribute to be set.</param>
         /// <param name="value">The value of the attribute being set.</param>
         /// <exception cref="AW.InstanceAttributeException">Thrown when the instance failed to set the attribute.</exception>
-        /// <exception cref="AW.InstanceSetFailedException">Thrown when the instance cannot be set properly. 
+        /// <exception cref="AW.InstanceSetFailedException">Thrown when the instance cannot be set properly.
         /// (i.e. the instance has been destroyed or is not valid).</exception>
         public void SetInt(Attributes attribute, int value)
         {
@@ -227,7 +225,7 @@ namespace AW
         /// </summary>
         /// <param name="attribute">The attribute to be accessed.</param>
         /// <returns>The value of the attribute being accessed.</returns>
-        /// <exception cref="AW.InstanceSetFailedException">Thrown when the instance cannot be set properly. 
+        /// <exception cref="AW.InstanceSetFailedException">Thrown when the instance cannot be set properly.
         /// (i.e. the instance has been destroyed or is not valid).</exception>
         public int GetInt(Attributes attribute)
         {
@@ -241,7 +239,7 @@ namespace AW
         /// <param name="attribute">The attribute to be set.</param>
         /// <param name="value">The value of the attribute being set.</param>
         /// <exception cref="AW.InstanceAttributeException">Thrown when the instance failed to set the attribute.</exception>
-        /// <exception cref="AW.InstanceSetFailedException">Thrown when the instance cannot be set properly. 
+        /// <exception cref="AW.InstanceSetFailedException">Thrown when the instance cannot be set properly.
         /// (i.e. the instance has been destroyed or is not valid).</exception>
         public void SetBool(Attributes attribute, bool value)
         {
@@ -254,7 +252,7 @@ namespace AW
         /// </summary>
         /// <param name="attribute">The attribute to be accessed.</param>
         /// <returns>The value of the attribute being accessed.</returns>
-        /// <exception cref="AW.InstanceSetFailedException">Thrown when the instance cannot be set properly. 
+        /// <exception cref="AW.InstanceSetFailedException">Thrown when the instance cannot be set properly.
         /// (i.e. the instance has been destroyed or is not valid).</exception>
         public bool GetBool(Attributes attribute)
         {
@@ -268,7 +266,7 @@ namespace AW
         /// <param name="attribute">The attribute to be set.</param>
         /// <param name="value">The value of the attribute being set.</param>
         /// <exception cref="AW.InstanceAttributeException">Thrown when the instance failed to set the attribute.</exception>
-        /// <exception cref="AW.InstanceSetFailedException">Thrown when the instance cannot be set properly. 
+        /// <exception cref="AW.InstanceSetFailedException">Thrown when the instance cannot be set properly.
         /// (i.e. the instance has been destroyed or is not valid).</exception>
         public void SetFloat(Attributes attribute, float value)
         {
@@ -281,7 +279,7 @@ namespace AW
         /// </summary>
         /// <param name="attribute">The attribute to be accessed.</param>
         /// <returns>The value of the attribute being accessed.</returns>
-        /// <exception cref="AW.InstanceSetFailedException">Thrown when the instance cannot be set properly. 
+        /// <exception cref="AW.InstanceSetFailedException">Thrown when the instance cannot be set properly.
         /// (i.e. the instance has been destroyed or is not valid).</exception>
         public float GetFloat(Attributes attribute)
         {
@@ -320,7 +318,7 @@ namespace AW
         /// </summary>
         /// <param name="attribute">The attribute to be accessed.</param>
         /// <returns>The value of the attribute being accessed.</returns>
-        /// <exception cref="AW.InstanceSetFailedException">Thrown when the instance cannot be set properly. 
+        /// <exception cref="AW.InstanceSetFailedException">Thrown when the instance cannot be set properly.
         /// (i.e. the instance has been destroyed or is not valid).</exception>
         [EnvironmentPermissionAttribute(SecurityAction.Demand, Unrestricted = true)]
         public byte[] GetData(Attributes attribute)
@@ -341,7 +339,7 @@ namespace AW
         /// Takes a string value representing an XML Custom Avatar defition and sets the <see cref="AW.Attributes.CavDefinition" /> attribute accordingly.
         /// </summary>
         /// <param name="cavContents">String representation of the Custom Avatar definition's XML.</param>
-        /// <exception cref="AW.InstanceSetFailedException">Thrown when the instance cannot be set properly. 
+        /// <exception cref="AW.InstanceSetFailedException">Thrown when the instance cannot be set properly.
         /// (i.e. the instance has been destroyed or is not valid).</exception>
         [EnvironmentPermissionAttribute(SecurityAction.Demand, Unrestricted = true)]
         public void SetCavData(string cavContents)
@@ -354,7 +352,7 @@ namespace AW
         /// Reads the <see cref="AW.Attributes.CavDefinition" /> attribute and returns the XML contained as a string.
         /// </summary>
         /// <returns>String representation of the Custom Avatar definition's XML.</returns>
-        /// <exception cref="AW.InstanceSetFailedException">Thrown when the instance cannot be set properly. 
+        /// <exception cref="AW.InstanceSetFailedException">Thrown when the instance cannot be set properly.
         /// (i.e. the instance has been destroyed or is not valid).</exception>
         [EnvironmentPermissionAttribute(SecurityAction.Demand, Unrestricted = true)]
         public string GetCavData()

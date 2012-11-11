@@ -50,14 +50,10 @@ namespace AW
 
             set
             {
-                if(value)
-                {
+                if (value)
                     flags |= Flags.Loop;
-                }
                 else
-                {
                     flags &= ~Flags.Loop;
-                }
             }
         }
 
@@ -68,13 +64,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.UseObjectTag;
-                }
                 else
-                {
                     flags &= ~Flags.UseObjectTag;
-                }
             }
         }
 
@@ -85,13 +77,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.BumpAdd;
-                }
                 else
-                {
                     flags &= ~Flags.BumpAdd;
-                }
             }
         }
 
@@ -102,13 +90,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.ClickToStart;
-                }
                 else
-                {
                     flags &= ~Flags.ClickToStart;
-                }
             }
         }
 
@@ -119,13 +103,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.ClickToPause;
-                }
                 else
-                {
                     flags &= ~Flags.ClickToPause;
-                }
             }
         }
 
@@ -136,13 +116,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.LockPosition;
-                }
                 else
-                {
                     flags &= ~Flags.LockPosition;
-                }
             }
         }
 
@@ -153,13 +129,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.LockYaw;
-                }
                 else
-                {
                     flags &= ~Flags.LockYaw;
-                }
             }
         }
 
@@ -170,13 +142,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.LockPitch;
-                }
                 else
-                {
                     flags &= ~Flags.LockPitch;
-                }
             }
         }
 
@@ -187,13 +155,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.SingleRider;
-                }
                 else
-                {
                     flags &= ~Flags.SingleRider;
-                }
             }
         }
 
@@ -204,13 +168,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.NoAutoYaw;
-                }
                 else
-                {
                     flags &= ~Flags.NoAutoYaw;
-                }
             }
         }
 
@@ -221,13 +181,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.EmptyReset;
-                }
                 else
-                {
                     flags &= ~Flags.EmptyReset;
-                }
             }
         }
 
@@ -238,13 +194,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.DisableFlying;
-                }
                 else
-                {
                     flags &= ~Flags.DisableFlying;
-                }
             }
         }
 
@@ -255,13 +207,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.KeepOnWater;
-                }
                 else
-                {
                     flags &= ~Flags.KeepOnWater;
-                }
             }
         }
 
@@ -272,13 +220,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.DisableUpwardMovement;
-                }
                 else
-                {
                     flags &= ~Flags.DisableUpwardMovement;
-                }
             }
         }
 
@@ -289,13 +233,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.InvisibleAvatar;
-                }
                 else
-                {
                     flags &= ~Flags.InvisibleAvatar;
-                }
             }
         }
 
@@ -306,13 +246,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.ExitEjectUpwards;
-                }
                 else
-                {
                     flags &= ~Flags.ExitEjectUpwards;
-                }
             }
         }
 
@@ -323,13 +259,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.ExitNonSolid;
-                }
                 else
-                {
                     flags &= ~Flags.ExitNonSolid;
-                }
             }
         }
 
@@ -340,13 +272,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.AvatarApplyTiltX;
-                }
                 else
-                {
                     flags &= ~Flags.AvatarApplyTiltX;
-                }
             }
         }
 
@@ -357,13 +285,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.AvatarApplyTiltZ;
-                }
                 else
-                {
                     flags &= ~Flags.AvatarApplyTiltZ;
-                }
             }
         }
 
@@ -374,13 +298,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.ObjectLink;
-                }
                 else
-                {
                     flags &= ~Flags.ObjectLink;
-                }
             }
         }
 
@@ -391,13 +311,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.DisableMove;
-                }
                 else
-                {
                     flags &= ~Flags.DisableMove;
-                }
             }
         }
 
@@ -408,13 +324,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.TiltByTerrain;
-                }
                 else
-                {
                     flags &= ~Flags.TiltByTerrain;
-                }
             }
         }
 
@@ -425,13 +337,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.DisableExplicitSequences;
-                }
                 else
-                {
                     flags &= ~Flags.DisableExplicitSequences;
-                }
             }
         }
 
@@ -442,13 +350,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.TurnInPlace;
-                }
                 else
-                {
                     flags &= ~Flags.TurnInPlace;
-                }
             }
         }
 
@@ -459,13 +363,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.DisableTeleports;
-                }
                 else
-                {
                     flags &= ~Flags.DisableTeleports;
-                }
             }
         }
 
@@ -476,13 +376,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.DetachOnTeleport;
-                }
                 else
-                {
                     flags &= ~Flags.DetachOnTeleport;
-                }
             }
         }
     }

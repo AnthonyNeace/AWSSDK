@@ -25,14 +25,10 @@ namespace AW
 
             set
             {
-                if(value)
-                {
+                if (value)
                     flags |= Flags.TrackUser;
-                }
                 else
-                {
                     flags &= ~Flags.TrackUser;
-                }
             }
         }
     }

@@ -101,10 +101,10 @@ namespace AW
                 var targetType = SerializationHelper.GetFieldOrPropertyType(valueOrdinal.Value);
 
 
-                if(targetType == null)
-                {
-                    throw new V4ObjectSerializationException("Failed to deserialize object.");   
-                }
+                if (targetType == null)
+                    throw new V4ObjectSerializationException("Failed to deserialize object.");
+
+
 
                 if (targetType == typeof(string))
                 {
@@ -114,23 +114,23 @@ namespace AW
                 else if (targetType.GetInterface("ICollection") != null)
                 {
                     var genericArguments = targetType.GetGenericArguments();
-                    if(genericArguments.Length != 1)
-                    {
+                    if (genericArguments.Length != 1)
                         throw new V4ObjectSerializationException("Failed to deserialize object.");
-                    }
+
+
 
                     var structCollection = Activator.CreateInstance(targetType) as IList;
                     if (structCollection == null)
-                    {
                         throw new V4ObjectSerializationException("Failed to deserialize object.");
-                    }
+
+
 
                     var structType = genericArguments[0];
                     int structSize = Marshal.SizeOf(structType) + 1;
-                    int totalStructs = length/structSize;
+                    int totalStructs = length / structSize;
                     int structPosition = offset;
 
-                    for(int i = 0; i < totalStructs; ++i)
+                    for (int i = 0; i < totalStructs; ++i)
                     {
                         structCollection.Add(Miscellaneous.BytesToStruct(structType, payload, structPosition));
                         structPosition += structSize;
@@ -149,7 +149,7 @@ namespace AW
         /// Gets the data.
         /// </summary>
         /// <returns></returns>
-        [EnvironmentPermission(SecurityAction.LinkDemand, Unrestricted=true)]
+        [EnvironmentPermission(SecurityAction.LinkDemand, Unrestricted = true)]
         private static byte[] ObjectToBytes(TObject outObject)
         {
             var payload = new List<byte[]>();
@@ -166,23 +166,23 @@ namespace AW
 
                 var value = SerializationHelper.GetValue(valueOrdinal.Value, outObject);
 
-                if(value == null)
-                {
+                if (value == null)
                     throw new V4ObjectSerializationException("Failed to serialize object.");
-                }
+
+
 
                 byte[] asBytes = null;
 
-                if(value is string)
+                if (value is string)
+                    asBytes = Encoding.UTF8.GetBytes((string)value);
+
+
+                else if (value is IEnumerable)
                 {
-                    asBytes = Encoding.UTF8.GetBytes((string) value);
-                }
-                else if(value is IEnumerable)
-                {
-                    var asEnumerable = (IEnumerable) value;
+                    var asEnumerable = (IEnumerable)value;
                     var byteList = new List<byte>();
 
-                    foreach(var item in asEnumerable)
+                    foreach (var item in asEnumerable)
                     {
                         byteList.AddRange(Miscellaneous.ConcatArrays(Miscellaneous.StructToBytes(item), new byte[] { 0x0 }));
                     }
@@ -190,10 +190,10 @@ namespace AW
                     asBytes = byteList.ToArray();
                 }
 
-                if(asBytes == null)
-                {
+                if (asBytes == null)
                     throw new V4ObjectSerializationException("Failed to serialize object.");
-                }
+
+
 
                 SerializationHelper.SetValue(sizeOrdinal, fieldSizeProvider, asBytes.Length);
                 payload.Add(asBytes);

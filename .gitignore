@@ -1,0 +1,9 @@
+*/bin/*
+*/obj/*
+Build/*.dll
+Build/*.h
+Build/*.pdb
+Build/*.so.*
+Build/*.exe
+Build/*.lib
+*.exe.config

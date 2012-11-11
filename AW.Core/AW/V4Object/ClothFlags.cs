@@ -37,13 +37,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.Gravity;
-                }
                 else
-                {
                     flags &= ~Flags.Gravity;
-                }
             }
         }
 
@@ -54,13 +50,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.Static;
-                }
                 else
-                {
                     flags &= ~Flags.Static;
-                }
             }
         }
 
@@ -71,13 +63,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.Comdamping;
-                }
                 else
-                {
                     flags &= ~Flags.Comdamping;
-                }
             }
         }
 
@@ -88,13 +76,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.BendingOrtho;
-                }
                 else
-                {
                     flags &= ~Flags.BendingOrtho;
-                }
             }
         }
 
@@ -105,13 +89,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.SelfCollision;
-                }
                 else
-                {
                     flags &= ~Flags.SelfCollision;
-                }
             }
         }
 
@@ -122,13 +102,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.CollisionTwoWay;
-                }
                 else
-                {
                     flags &= ~Flags.CollisionTwoWay;
-                }
             }
         }
 
@@ -139,13 +115,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.AttachmentTwoWay;
-                }
                 else
-                {
                     flags &= ~Flags.AttachmentTwoWay;
-                }
             }
         }
 
@@ -156,13 +128,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.AttachmentTearable;
-                }
                 else
-                {
                     flags &= ~Flags.AttachmentTearable;
-                }
             }
         }
 
@@ -173,13 +141,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.Tearable;
-                }
                 else
-                {
                     flags &= ~Flags.Tearable;
-                }
             }
         }
 
@@ -190,13 +154,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.TearableDiagonal;
-                }
                 else
-                {
                     flags &= ~Flags.TearableDiagonal;
-                }
             }
         }
 
@@ -207,13 +167,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.Pressure;
-                }
                 else
-                {
                     flags &= ~Flags.Pressure;
-                }
             }
         }
 
@@ -224,13 +180,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.Adhere;
-                }
                 else
-                {
                     flags &= ~Flags.Adhere;
-                }
             }
         }
 
@@ -241,13 +193,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.Untangling;
-                }
                 else
-                {
                     flags &= ~Flags.Untangling;
-                }
             }
         }
 
@@ -258,13 +206,9 @@ namespace AW
             set
             {
                 if (value)
-                {
                     flags |= Flags.HardStretchLimit;
-                }
                 else
-                {
                     flags &= ~Flags.HardStretchLimit;
-                }
             }
         }
 
@@ -274,14 +218,10 @@ namespace AW
 
             set
             {
-                if(value)
-                {
+                if (value)
                     flags = Flags.NoTextureMirrorring;
-                }
                 else
-                {
                     flags &= ~Flags.NoTextureMirrorring;
-                }
             }
         }
     }

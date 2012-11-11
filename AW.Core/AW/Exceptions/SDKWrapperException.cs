@@ -19,7 +19,7 @@ namespace AW
         /// <summary>
         /// Numeric representation of the Return Code returned by the instance operation.
         /// </summary>
-        /// 
+        ///
         public int ErrorCode
         {
             get;
@@ -46,9 +46,9 @@ namespace AW
         internal static void Assert(int error)
         {
             if (error == 0)
-            {
                 return;
-            }
+
+
 
             var stackTrace = new StackTrace();
             StackFrame stackFrame = stackTrace.GetFrame(stackTrace.FrameCount > 0 ? 1 : 0);
