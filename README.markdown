@@ -1,4 +1,5 @@
 ActiveWorlds Super-SDK by Roy Curtis
+
 Adapted from the AW.NET wrapper by ByteMR
 
 # Directory structure
@@ -15,6 +16,7 @@ Structure is as follows:
 # Planned implementation design/samples
 
 * Simple bot that says hello:
+
 ```csharp
 var bot = new Bot
 {
@@ -28,6 +30,7 @@ bot.Exit();
 ```
 
 * Get five earliest built objects from cell
+
 ```csharp
 var bot = new Bot
 {
