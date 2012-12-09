@@ -73,7 +73,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_ADMIN_WORLD_INFO) && _eventHandlers[AW_EVENT_ADMIN_WORLD_INFO].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_ADMIN_WORLD_INFO].Managed(this);
+				_eventHandlers[AW_EVENT_ADMIN_WORLD_INFO].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -122,7 +122,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_ADMIN_WORLD_DELETE) && _eventHandlers[AW_EVENT_ADMIN_WORLD_DELETE].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_ADMIN_WORLD_DELETE].Managed(this);
+				_eventHandlers[AW_EVENT_ADMIN_WORLD_DELETE].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -171,7 +171,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_AVATAR_ADD) && _eventHandlers[AW_EVENT_AVATAR_ADD].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_AVATAR_ADD].Managed(this);
+				_eventHandlers[AW_EVENT_AVATAR_ADD].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -220,7 +220,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_AVATAR_CHANGE) && _eventHandlers[AW_EVENT_AVATAR_CHANGE].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_AVATAR_CHANGE].Managed(this);
+				_eventHandlers[AW_EVENT_AVATAR_CHANGE].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -269,7 +269,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_AVATAR_DELETE) && _eventHandlers[AW_EVENT_AVATAR_DELETE].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_AVATAR_DELETE].Managed(this);
+				_eventHandlers[AW_EVENT_AVATAR_DELETE].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -318,7 +318,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_AVATAR_CLICK) && _eventHandlers[AW_EVENT_AVATAR_CLICK].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_AVATAR_CLICK].Managed(this);
+				_eventHandlers[AW_EVENT_AVATAR_CLICK].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -367,7 +367,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_AVATAR_RELOAD) && _eventHandlers[AW_EVENT_AVATAR_RELOAD].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_AVATAR_RELOAD].Managed(this);
+				_eventHandlers[AW_EVENT_AVATAR_RELOAD].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -416,7 +416,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_BOTGRAM) && _eventHandlers[AW_EVENT_BOTGRAM].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_BOTGRAM].Managed(this);
+				_eventHandlers[AW_EVENT_BOTGRAM].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -465,7 +465,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_BOTMENU) && _eventHandlers[AW_EVENT_BOTMENU].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_BOTMENU].Managed(this);
+				_eventHandlers[AW_EVENT_BOTMENU].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -514,7 +514,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_CELL_BEGIN) && _eventHandlers[AW_EVENT_CELL_BEGIN].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_CELL_BEGIN].Managed(this);
+				_eventHandlers[AW_EVENT_CELL_BEGIN].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -563,7 +563,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_CELL_OBJECT) && _eventHandlers[AW_EVENT_CELL_OBJECT].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_CELL_OBJECT].Managed(this);
+				_eventHandlers[AW_EVENT_CELL_OBJECT].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -612,7 +612,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_CELL_END) && _eventHandlers[AW_EVENT_CELL_END].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_CELL_END].Managed(this);
+				_eventHandlers[AW_EVENT_CELL_END].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -661,7 +661,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_CHAT) && _eventHandlers[AW_EVENT_CHAT].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_CHAT].Managed(this);
+				_eventHandlers[AW_EVENT_CHAT].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -710,7 +710,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_CONSOLE_MESSAGE) && _eventHandlers[AW_EVENT_CONSOLE_MESSAGE].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_CONSOLE_MESSAGE].Managed(this);
+				_eventHandlers[AW_EVENT_CONSOLE_MESSAGE].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -759,7 +759,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_ENTITY_ADD) && _eventHandlers[AW_EVENT_ENTITY_ADD].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_ENTITY_ADD].Managed(this);
+				_eventHandlers[AW_EVENT_ENTITY_ADD].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -808,7 +808,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_ENTITY_CHANGE) && _eventHandlers[AW_EVENT_ENTITY_CHANGE].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_ENTITY_CHANGE].Managed(this);
+				_eventHandlers[AW_EVENT_ENTITY_CHANGE].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -857,7 +857,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_ENTITY_DELETE) && _eventHandlers[AW_EVENT_ENTITY_DELETE].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_ENTITY_DELETE].Managed(this);
+				_eventHandlers[AW_EVENT_ENTITY_DELETE].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -906,7 +906,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_ENTITY_RIDER_ADD) && _eventHandlers[AW_EVENT_ENTITY_RIDER_ADD].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_ENTITY_RIDER_ADD].Managed(this);
+				_eventHandlers[AW_EVENT_ENTITY_RIDER_ADD].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -955,7 +955,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_ENTITY_RIDER_CHANGE) && _eventHandlers[AW_EVENT_ENTITY_RIDER_CHANGE].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_ENTITY_RIDER_CHANGE].Managed(this);
+				_eventHandlers[AW_EVENT_ENTITY_RIDER_CHANGE].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -1004,7 +1004,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_ENTITY_RIDER_DELETE) && _eventHandlers[AW_EVENT_ENTITY_RIDER_DELETE].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_ENTITY_RIDER_DELETE].Managed(this);
+				_eventHandlers[AW_EVENT_ENTITY_RIDER_DELETE].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -1053,7 +1053,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_ENTITY_LINKS) && _eventHandlers[AW_EVENT_ENTITY_LINKS].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_ENTITY_LINKS].Managed(this);
+				_eventHandlers[AW_EVENT_ENTITY_LINKS].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -1102,7 +1102,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_HUD_CLICK) && _eventHandlers[AW_EVENT_HUD_CLICK].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_HUD_CLICK].Managed(this);
+				_eventHandlers[AW_EVENT_HUD_CLICK].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -1151,7 +1151,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_NOISE) && _eventHandlers[AW_EVENT_NOISE].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_NOISE].Managed(this);
+				_eventHandlers[AW_EVENT_NOISE].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -1200,7 +1200,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_OBJECT_ADD) && _eventHandlers[AW_EVENT_OBJECT_ADD].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_OBJECT_ADD].Managed(this);
+				_eventHandlers[AW_EVENT_OBJECT_ADD].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -1249,7 +1249,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_OBJECT_DELETE) && _eventHandlers[AW_EVENT_OBJECT_DELETE].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_OBJECT_DELETE].Managed(this);
+				_eventHandlers[AW_EVENT_OBJECT_DELETE].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -1298,7 +1298,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_OBJECT_CLICK) && _eventHandlers[AW_EVENT_OBJECT_CLICK].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_OBJECT_CLICK].Managed(this);
+				_eventHandlers[AW_EVENT_OBJECT_CLICK].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -1347,7 +1347,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_OBJECT_BUMP) && _eventHandlers[AW_EVENT_OBJECT_BUMP].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_OBJECT_BUMP].Managed(this);
+				_eventHandlers[AW_EVENT_OBJECT_BUMP].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -1396,7 +1396,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_OBJECT_SELECT) && _eventHandlers[AW_EVENT_OBJECT_SELECT].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_OBJECT_SELECT].Managed(this);
+				_eventHandlers[AW_EVENT_OBJECT_SELECT].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -1445,7 +1445,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_TELEPORT) && _eventHandlers[AW_EVENT_TELEPORT].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_TELEPORT].Managed(this);
+				_eventHandlers[AW_EVENT_TELEPORT].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -1494,7 +1494,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_TERRAIN_BEGIN) && _eventHandlers[AW_EVENT_TERRAIN_BEGIN].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_TERRAIN_BEGIN].Managed(this);
+				_eventHandlers[AW_EVENT_TERRAIN_BEGIN].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -1543,7 +1543,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_TERRAIN_CHANGED) && _eventHandlers[AW_EVENT_TERRAIN_CHANGED].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_TERRAIN_CHANGED].Managed(this);
+				_eventHandlers[AW_EVENT_TERRAIN_CHANGED].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -1592,7 +1592,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_TERRAIN_DATA) && _eventHandlers[AW_EVENT_TERRAIN_DATA].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_TERRAIN_DATA].Managed(this);
+				_eventHandlers[AW_EVENT_TERRAIN_DATA].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -1641,7 +1641,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_TERRAIN_END) && _eventHandlers[AW_EVENT_TERRAIN_END].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_TERRAIN_END].Managed(this);
+				_eventHandlers[AW_EVENT_TERRAIN_END].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -1690,7 +1690,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_TOOLBAR_CLICK) && _eventHandlers[AW_EVENT_TOOLBAR_CLICK].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_TOOLBAR_CLICK].Managed(this);
+				_eventHandlers[AW_EVENT_TOOLBAR_CLICK].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -1739,7 +1739,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_UNIVERSE_ATTRIBUTES) && _eventHandlers[AW_EVENT_UNIVERSE_ATTRIBUTES].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_UNIVERSE_ATTRIBUTES].Managed(this);
+				_eventHandlers[AW_EVENT_UNIVERSE_ATTRIBUTES].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -1788,7 +1788,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_UNIVERSE_DISCONNECT) && _eventHandlers[AW_EVENT_UNIVERSE_DISCONNECT].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_UNIVERSE_DISCONNECT].Managed(this);
+				_eventHandlers[AW_EVENT_UNIVERSE_DISCONNECT].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -1837,7 +1837,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_URL) && _eventHandlers[AW_EVENT_URL].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_URL].Managed(this);
+				_eventHandlers[AW_EVENT_URL].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -1886,7 +1886,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_URL_CLICK) && _eventHandlers[AW_EVENT_URL_CLICK].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_URL_CLICK].Managed(this);
+				_eventHandlers[AW_EVENT_URL_CLICK].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -1935,7 +1935,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_USER_INFO) && _eventHandlers[AW_EVENT_USER_INFO].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_USER_INFO].Managed(this);
+				_eventHandlers[AW_EVENT_USER_INFO].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -1984,7 +1984,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_WORLD_ATTRIBUTES) && _eventHandlers[AW_EVENT_WORLD_ATTRIBUTES].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_WORLD_ATTRIBUTES].Managed(this);
+				_eventHandlers[AW_EVENT_WORLD_ATTRIBUTES].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -2033,7 +2033,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_WORLD_DISCONNECT) && _eventHandlers[AW_EVENT_WORLD_DISCONNECT].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_WORLD_DISCONNECT].Managed(this);
+				_eventHandlers[AW_EVENT_WORLD_DISCONNECT].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -2082,7 +2082,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_WORLD_INFO) && _eventHandlers[AW_EVENT_WORLD_INFO].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_WORLD_INFO].Managed(this);
+				_eventHandlers[AW_EVENT_WORLD_INFO].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -2131,7 +2131,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_CAV_DEFINITION_CHANGE) && _eventHandlers[AW_EVENT_CAV_DEFINITION_CHANGE].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_CAV_DEFINITION_CHANGE].Managed(this);
+				_eventHandlers[AW_EVENT_CAV_DEFINITION_CHANGE].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -2180,7 +2180,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_WORLD_CAV_DEFINITION_CHANGE) && _eventHandlers[AW_EVENT_WORLD_CAV_DEFINITION_CHANGE].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_WORLD_CAV_DEFINITION_CHANGE].Managed(this);
+				_eventHandlers[AW_EVENT_WORLD_CAV_DEFINITION_CHANGE].Managed(this, new EventCancelToken());
 			}
 		}
 
@@ -2229,7 +2229,7 @@ namespace AW
 		{						
 			if(_eventHandlers.ContainsKey(AW_EVENT_LASER_BEAM) && _eventHandlers[AW_EVENT_LASER_BEAM].Managed != null)
 			{
-				_eventHandlers[AW_EVENT_LASER_BEAM].Managed(this);
+				_eventHandlers[AW_EVENT_LASER_BEAM].Managed(this, new EventCancelToken());
 			}
 		}
 

@@ -331,7 +331,7 @@ namespace AW
     /// Represented by the <see cref="AW.Attributes.HudElementFlags" /> attribute.
     /// </summary>
     [Flags]
-    public enum HudElementFlag
+    public enum HudFlag
     {
         /// <summary>
         /// Specifies that the HUD element will raise the <see cref="AW.Instance.EventHudClick" /> event when clicked by the user.

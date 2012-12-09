@@ -7,3 +7,4 @@ Build/*.so.*
 Build/*.exe
 Build/*.lib
 *.exe.config
+*.suo

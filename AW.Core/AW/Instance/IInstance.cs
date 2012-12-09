@@ -7,7 +7,7 @@ namespace AW
     /// Delegate used for handling SDK events.
     /// </summary>
     /// <param name="sender"></param>
-    public delegate void InstanceEventHandler(IInstance sender);
+    public delegate void InstanceEventHandler(IInstance sender, EventCancelToken cancel);
 
     /// <summary>
     /// Delegate used for handling SDK callbacks. 

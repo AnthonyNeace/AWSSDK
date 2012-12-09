@@ -212,7 +212,7 @@ namespace AW
 		
 		Color HudElementColor { get;  set;  }
 		
-		HudElementFlag HudElementFlags { get;  set;  }
+		HudFlag HudElementFlags { get;  set;  }
 		
 		int HudElementId { get;  set;  }
 		
@@ -1478,9 +1478,9 @@ namespace AW
 			set { _instance.SetInt(Attributes.HudElementColor, (int) value); }
 		}
 
-		public HudElementFlag HudElementFlags
+		public HudFlag HudElementFlags
 		{
-			get { return (HudElementFlag) _instance.GetInt(Attributes.HudElementFlags); }
+			get { return (HudFlag) _instance.GetInt(Attributes.HudElementFlags); }
 			set { _instance.SetInt(Attributes.HudElementFlags, (int) value); }
 		}
 

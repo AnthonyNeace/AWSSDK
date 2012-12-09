@@ -140,9 +140,7 @@ namespace AW
             _disposed = true;
 
             if (Disposing != null)
-                Disposing(this);
-
-
+                Disposing(this, new EventCancelToken());
 
             if (Utility.Initialized)
             {

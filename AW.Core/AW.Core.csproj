@@ -76,6 +76,9 @@
     <Reference Include="System.XML" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AW\Instance\Instance.SSDKEvents.cs" />
+    <Compile Include="AW\Instance\Instance.SSDKMethods.cs" />
+    <Compile Include="AW\V4Object\HUD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AW\DataStructures\AttributeProvider.Generated.cs">
       <AutoGen>True</AutoGen>

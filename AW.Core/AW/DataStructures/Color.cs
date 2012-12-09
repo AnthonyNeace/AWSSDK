@@ -11,6 +11,11 @@ namespace AW
     [StructLayout(LayoutKind.Sequential, Pack=0)]
     public struct Color : IEquatable<Color>
     {
+        public static Color ColorWhite = new Color(255, 255, 255);
+        public static Color ColorRed = new Color(255, 0, 0);
+        public static Color ColorBlue = new Color(0, 255, 0);
+        public static Color ColorGreen = new Color(0, 0, 255);
+
         private readonly byte _alpha;
         private readonly byte _blue;
         private readonly byte _green;
